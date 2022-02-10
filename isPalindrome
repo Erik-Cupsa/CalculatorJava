@@ -1,0 +1,25 @@
+public class Main {
+
+	public static void main(String[] args) {
+		//testing isPalindrome method
+		System.out.println(isPalindrome("kayak"));
+		System.out.println(isPalindrome("hello"));
+	}
+  
+  	*//
+    * isPalindrome
+    *
+    *Finds if a word is a palindrome
+    *
+    *@param String str String to be tested
+    *@return boolean Whether it is or not a palindrome
+    */
+	public static boolean isPalindrome(String str) {
+        String test = ""; //initializing 
+        for (int i=0; i<str.length(); i++){
+            test = str.charAt(i) + test; //reversing the inputted String
+        }
+        if(test.equals(str) == true) return true; // if the reversed string is the same as the inputted string, return is a palindrome
+        else return false; //else it is not a palindrome
+	}
+}
