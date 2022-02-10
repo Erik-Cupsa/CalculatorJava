@@ -6,14 +6,14 @@ public class Main {
 		System.out.println(isPalindrome("hello"));
 	}
   
-  	*//
-    * isPalindrome
-    *
-    *Finds if a word is a palindrome
-    *
-    *@param String str String to be tested
-    *@return boolean Whether it is or not a palindrome
-    */
+  *//
+  * isPalindrome
+  *
+  *Finds if a word is a palindrome
+  *
+  *@param String str String to be tested
+  *@return boolean Whether it is or not a palindrome
+  */
 	public static boolean isPalindrome(String str) {
         String test = ""; //initializing 
         for (int i=0; i<str.length(); i++){
